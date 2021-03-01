@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css'
+import './estilo.css'
 
 import biscoito from './assets/biscoito.png';
 
@@ -34,7 +34,7 @@ class App extends Component{
         return(
             <div className="container">
                 <img src={biscoito} className="img" />
-                <Botao nome="Abrir biscoito" acaoBtn={this.quebraBiscoito} className="button"/>
+                <Botao nome="Abrir biscoito" acaoBtn={this.quebraBiscoito}/>
                 <h3 className="textoFrase">{this.state.textoFrase}</h3>
             </div>         
         );
@@ -45,7 +45,7 @@ class Botao extends Component{
     render(){
         return(
             <div>
-                <button className="button" onClick={this.props.acaoBtn} >{this.props.nome}</button>
+                <button onClick={this.props.acaoBtn} >{this.props.nome}</button>
             </div>
         );
     }
