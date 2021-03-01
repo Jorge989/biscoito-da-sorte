@@ -33,7 +33,7 @@ class App extends Component{
     render(){
         return(
             <div className="container">
-                <img src={biscoito} className="img" />
+                <img src={biscoito} className="img" alt="biscoito"/>
                 <Botao nome="Abrir biscoito" acaoBtn={this.quebraBiscoito} className="button"/>
                 <h3 className="textoFrase">{this.state.textoFrase}</h3>
             </div>         
